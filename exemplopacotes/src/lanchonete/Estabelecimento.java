@@ -15,30 +15,15 @@ public class Estabelecimento {
 		cozinheiro.adicionarLancheNoBalcao();
 		cozinheiro.adicionarComboNoBalcao();
 		
-		Almoxarife almoxarife = new Almoxarife();
-		//ações que não precisam estarem disponíveis para toda a aplicação
-		almoxarife.controlarEntrada();
-		almoxarife.controlarSaida();
-		//ação que somente o seu pacote cozinha precisa conhecer (default)
-		
 		
 		Atendente atendente = new Atendente();
-		atendente.pegarLancheCozinha();
 		atendente.receberPagamento();
 		atendente.servindoMesa();
-		//ação que somente o seu pacote cozinha precisa conhecer (default)
 		
 		Cliente cliente = new Cliente();
 		cliente.escolherLanche();
 		cliente.fazerPedido();
 		cliente.pagarConta();
-		
-		//não deveria, mas o estabelecimento
-		//ainda não definiu normas de atendimento
-		cliente.pegarPedidoBalcao();
-		
-		//esta ação é muito sigilosa, qua tal ser privada ?
-		cliente.consultarSaldoAplicativo();
 		
 		
 		
