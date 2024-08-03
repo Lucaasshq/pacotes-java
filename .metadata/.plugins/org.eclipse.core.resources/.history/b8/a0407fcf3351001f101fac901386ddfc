@@ -1,0 +1,5 @@
+package estadoBrasileiro;
+
+public enum EstadosBrasileiros {
+
+}

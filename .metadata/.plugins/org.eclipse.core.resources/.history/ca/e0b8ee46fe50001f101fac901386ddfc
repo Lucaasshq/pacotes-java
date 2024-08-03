@@ -1,0 +1,5 @@
+package com.matersoft.clinical.service;
+
+public class ExameService {
+
+}
